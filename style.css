@@ -60,23 +60,23 @@ body {
 
 
 /* ROOM CONTAINER */
-
 #roomCanvas {
-  width: 90%;
-  height: 90%;
   position: relative;
-  top: -70px;   /* moves room UP */
+
+  width: 100%;       /* fills left 2/3 area */
+  height: 100%;
+
+  max-width: 1600px;  /* large for 75" board */
+  max-height: 900px;  /* keeps aspect ratio */
+
+  margin: auto;
 }
-
-
-/* ROOM IMAGE */
 
 #roomImage {
   width: 100%;
-  height: 100%;
+  height: auto;       /* keep proportions */
+  max-height: 100%;
   object-fit: contain;
-  pointer-events: none;
-  user-select: none;
 }
 
 

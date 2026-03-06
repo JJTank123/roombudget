@@ -60,23 +60,26 @@ body {
 
 
 /* ROOM CONTAINER */
+/* ROOM CONTAINER */
 #roomCanvas {
   position: relative;
 
-  width: 100%;       /* fills left 2/3 area */
-  height: 100%;
-
-  max-width: 1600px;  /* large for 75" board */
-  max-height: 900px;  /* keeps aspect ratio */
-
+  width: 90%;            /* take most of left section */
+  height: 0;
+  padding-bottom: 56.25%; /* maintain 16:9 aspect ratio */
+  
+  max-width: 1600px;     /* caps scaling */
   margin: auto;
 }
 
+/* ROOM IMAGE */
 #roomImage {
+  position: absolute;
+  top: 0;
+  left: 0;
   width: 100%;
-  height: auto;       /* keep proportions */
-  max-height: 100%;
-  object-fit: contain;
+  height: 100%;
+  object-fit: contain;   /* scales image inside container */
 }
 
 

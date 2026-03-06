@@ -657,7 +657,7 @@ changeViewBtn.addEventListener('click', () => {
 // =======================
 finishBtn.addEventListener("click", () => {
   if (budget >= 0) {
-    alert("✅ You stayed within budget! Drawer unlocked! You code is 200");
+    alert("✅ You stayed within budget! Your code is 200");
   } else {
     alert("❌ Over Budget! Try Again");
   }

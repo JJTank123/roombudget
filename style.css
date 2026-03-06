@@ -351,6 +351,10 @@ cursor:grab;
 touch-action:none;
 }
 
+.locked {
+ 
+  color: yellow;
+}
 
 
 #timer {
